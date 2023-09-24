@@ -1,0 +1,3 @@
+frames_finalpass/TRAIN/C/0298/left/0011.png frames_finalpass/TRAIN/C/0298/right/0011.png disparity/TRAIN/C/0298/left/0011.pfm
+frames_finalpass/TRAIN/C/0298/left/0014.png frames_finalpass/TRAIN/C/0298/right/0014.png disparity/TRAIN/C/0298/left/0014.pfm
+frames_finalpass/TRAIN/C/0298/left/0006.png frames_finalpass/TRAIN/C/0298/right/0006.png disparity/TRAIN/C/0298/left/0006.pfm

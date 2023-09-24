@@ -1,0 +1,3 @@
+frames_finalpass/TEST/C/0087/left/0010.png frames_finalpass/TEST/C/0087/right/0010.png disparity/TEST/C/0087/left/0010.pfm
+frames_finalpass/TEST/C/0073/left/0008.png frames_finalpass/TEST/C/0073/right/0008.png disparity/TEST/C/0073/left/0008.pfm
+frames_finalpass/TEST/C/0073/left/0009.png frames_finalpass/TEST/C/0073/right/0009.png disparity/TEST/C/0073/left/0009.pfm
