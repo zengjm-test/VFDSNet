@@ -179,8 +179,6 @@ def train_sample(sample, compute_metrics=False):
     else:
         loss = model_loss_train(disp_ests, disp_gt, mask)
 
-    if str(loss) == 'nan':
-        loss = 0
     scalar_outputs = {"loss": loss}
     image_outputs = {"disp_est": disp_ests, "disp_gt": disp_gt, "imgL": imgL, "imgR": imgR}
     if compute_metrics:
@@ -208,8 +206,7 @@ def test_sample(sample, compute_metrics=True):
     disp_ests = model(imgL, imgR)
     disp_gts = [disp_gt, disp_gt, disp_gt, disp_gt, disp_gt, disp_gt]
     loss = model_loss_test(disp_ests, disp_gt, mask)
-    if str(loss) == 'nan':
-        loss = 0
+
     scalar_outputs = {"loss": loss}
     image_outputs = {"disp_est": disp_ests, "disp_gt": disp_gt, "imgL": imgL, "imgR": imgR}
     image_outputs["errormap"] = [disp_error_image_func.apply(disp_est, disp_gt) for disp_est in disp_ests]
